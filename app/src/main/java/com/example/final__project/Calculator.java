@@ -25,7 +25,43 @@ public class Calculator {
         }
     }
 
-
+    public String[] stackParen(String[] array) {
+        String string = "";
+        String[] arrayString;
+        Stack<String> stack = new Stack<>();
+        for (int i = 0; i < array.length; i++) {
+            char word = array[i].charAt(0);
+            if (!this.checkSign(word)) {
+                string = string + array[i] + " ";
+            } else {
+                if (word == '(') {
+                    stack.push(array[i]);
+                } else {
+                    if (word == ')') {
+                        char temp;
+                        do {
+                            temp = stack.peek().charAt(0);
+                            if (temp != '(') {
+                                string = string + stack.peek() + " ";
+                            }
+                            stack.pop();
+                        } while (temp != '(');
+                    } else {
+                        while (!stack.isEmpty() && this.order(stack.peek().charAt(0))
+                                >= this.order(word)) {
+                            string = string + stack.pop() + " ";
+                        }
+                        stack.push(array[i]);
+                    }
+                }
+            }
+        }
+        while (!stack.isEmpty()) {
+            string = string + stack.pop() + " ";
+        }
+        arrayString = string.split(" ");
+        return arrayString;
+    }
 
     public String advanced(String[] array) {
         Stack<Double> stack = new Stack<>();

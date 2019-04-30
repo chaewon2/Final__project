@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button button0;
     Button button1;
     Button button2;
@@ -165,17 +165,86 @@ public class MainActivity extends AppCompatActivity {
             buttonOpen.setEnabled(false);
             buttonClose.setEnabled(false);
             buttonMod.setEnabled(false);
-        }
-        if (id == R.id.button0) {
-            if (check) {
-                equationString = new StringBuilder();
-                total = new StringBuilder();
-                check = false;
-            } else {
+        } else if (equations.length() < 21) {
+            button0.setEnabled(true);
+            button1.setEnabled(true);
+            button2.setEnabled(true);
+            button3.setEnabled(true);
+            button4.setEnabled(true);
+            button6.setEnabled(true);
+            button7.setEnabled(true);
+            button8.setEnabled(true);
+            button9.setEnabled(true);
+            buttonSin.setEnabled(true);
+            buttonCos.setEnabled(true);
+            buttonTan.setEnabled(true);
+            buttonASin.setEnabled(true);
+            buttonACos.setEnabled(true);
+            buttonATan.setEnabled(true);
+            buttonP.setEnabled(true);
+            buttonM.setEnabled(true);
+            buttonMul.setEnabled(true);
+            buttonDiv.setEnabled(true);
+            buttonInv.setEnabled(true);
+            buttonLog.setEnabled(true);
+            buttonLN.setEnabled(true);
+            buttonE.setEnabled(true);
+            buttonPW.setEnabled(true);
+            buttonFac.setEnabled(true);
+            buttonPI.setEnabled(true);
+            buttonPoint.setEnabled(true);
+            buttonSqrt.setEnabled(true);
+            buttonRes.setEnabled(true);
+            buttonOpen.setEnabled(true);
+            buttonClose.setEnabled(true);
+            buttonMod.setEnabled(true);
+        } else if (check) {
+            equationString = new StringBuilder();
+            total = new StringBuilder();
+            check = false;
+            equations.setText(equationString);
+        }   else {
+            if (id == R.id.button0) {
                 total.append("0");
                 equationString.append("0");
+                equations.setText(equationString);
+            } else if (id == R.id.button1) {
+                total.append("1");
+                equationString.append("1");
+                equations.setText(equationString);
+            } else if (id == R.id.button2) {
+                total.append("2");
+                equationString.append("2");
+                equations.setText(equationString);
+            } else if (id == R.id.button3) {
+                total.append("3");
+                equationString.append("3");
+                equations.setText(equationString);
+            } else if (id == R.id.button4) {
+                total.append("4");
+                equationString.append("4");
+                equations.setText(equationString);
+            } else if (id == R.id.button5) {
+                total.append("5");
+                equationString.append("5");
+                equations.setText(equationString);
+            } else if (id == R.id.button6) {
+                total.append("6");
+                equationString.append("6");
+                equations.setText(equationString);
+            } else if (id == R.id.button7) {
+                total.append("7");
+                equationString.append("7");
+                equations.setText(equationString);
+            } else if (id == R.id.button8) {
+                total.append("8");
+                equationString.append("8");
+                equations.setText(equationString);
+            } else if (id == R.id.button9) {
+                total.append("9");
+                equationString.append("9");
+                equations.setText(equationString);
             }
-            equations.setText(equationString);
         }
     }
 }
