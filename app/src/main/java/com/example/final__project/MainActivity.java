@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     Button buttonOpen;
     Button buttonClose;
     Button buttonMod;
+    TextView equations;
+    TextView result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,17 +69,17 @@ public class MainActivity extends AppCompatActivity {
         button8.setOnClickListener(this);
         button9 = (Button)findViewById(R.id.button9);
         button9.setOnClickListener(this);
-        buttonSin = (Button)findViewById(R.id.buttonSIN);
+        buttonSin = (Button)findViewById(R.id.buttonSin);
         buttonSin.setOnClickListener(this);
-        buttonCos = (Button)findViewById(R.id.buttonCOS);
+        buttonCos = (Button)findViewById(R.id.buttonCos);
         buttonCos.setOnClickListener(this);
-        buttonTan = (Button)findViewById(R.id.buttonTAN);
+        buttonTan = (Button)findViewById(R.id.buttonTan);
         buttonTan.setOnClickListener(this);
-        buttonASin = (Button)findViewById(R.id.buttonASIN);
+        buttonASin = (Button)findViewById(R.id.buttonASin);
         buttonASin.setOnClickListener(this);
-        buttonACos = (Button)findViewById(R.id.buttonACOS);
+        buttonACos = (Button)findViewById(R.id.buttonACos);
         buttonACos.setOnClickListener(this);
-        buttonATan = (Button)findViewById(R.id.buttonATAN);
+        buttonATan = (Button)findViewById(R.id.buttonATan);
         buttonATan.setOnClickListener(this);
         buttonP = (Button)findViewById(R.id.buttonP);
         buttonP.setOnClickListener(this);
@@ -89,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         buttonDiv.setOnClickListener(this);
         buttonInv = (Button)findViewById(R.id.buttonInv);
         buttonInv.setOnClickListener(this);
-        buttonLog = (Button)findViewById(R.id.buttonLOG);
+        buttonLog = (Button)findViewById(R.id.buttonLog);
         buttonLog.setOnClickListener(this);
         buttonLN = (Button)findViewById(R.id.buttonLN);
         buttonLN.setOnClickListener(this);
@@ -103,19 +105,35 @@ public class MainActivity extends AppCompatActivity {
         buttonPI.setOnClickListener(this);
         buttonPoint = (Button)findViewById(R.id.buttonDOT);
         buttonPoint.setOnClickListener(this);
-        buttonSqrt = (Button)findViewById(R.id.buttonSQRT);
+        buttonSqrt = (Button)findViewById(R.id.buttonSqrt);
         buttonSqrt.setOnClickListener(this);
         buttonRes = (Button)findViewById(R.id.buttonRes);
         buttonRes.setOnClickListener(this);
         buttonCl = (Button)findViewById(R.id.buttonCl);
         buttonCl.setOnClickListener(this);
         buttonBack = (Button)findViewById(R.id.buttonBack);
+        buttonBack.setOnClickListener(this);
         buttonOpen  = (Button)findViewById(R.id.buttonOpen);
         buttonOpen.setOnClickListener(this);
-        buttonBack.setOnClickListener(this);
         buttonClose = (Button)findViewById(R.id.buttonClose);
         buttonClose.setOnClickListener(this);
-        buttonMod = (Button)findViewById(R.id.buttonMOD);
+        buttonMod = (Button)findViewById(R.id.buttonMod);
         buttonMod.setOnClickListener(this);
+        equations = (TextView) findViewById(R.id.equations);
+        result = (TextView) findViewById(R.id.result);
+    }
+
+    int check = 0;
+    StringBuilder equations = new StringBuilder();
+    StringBuilder result = new StringBuilder();
+
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        String[] array = null;
+        if (equations.length() > 20) {
+
+        }
+
     }
 }

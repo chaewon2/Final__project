@@ -14,21 +14,19 @@ tools:context=".MainActivity">
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/txtCal"
+        android:id="@+id/equations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
         android:layout_gravity="center_vertical"
-        android:textColor="#7f7f7f"
         android:textSize="50sp"
         />
     <TextView
-        android:id="@+id/txtResult"
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:text="0"
-        android:textColor="#7f7f7f"
         android:textSize="70sp"
         />
 </LinearLayout>
@@ -47,7 +45,7 @@ tools:context=".MainActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/buttonSIN"
+            android:id="@+id/buttonSin"
             android:text="Sin"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -56,7 +54,7 @@ tools:context=".MainActivity">
             android:textSize="16sp"
             />
         <Button
-            android:id="@+id/buttonCOS"
+            android:id="@+id/buttonCos"
             android:text="Cos"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -66,7 +64,7 @@ tools:context=".MainActivity">
             />
 
         <Button
-            android:id="@+id/buttonTAN"
+            android:id="@+id/buttonTan"
             android:text="Tan"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -76,7 +74,7 @@ tools:context=".MainActivity">
             />
 
         <Button
-            android:id="@+id/buttonLOG"
+            android:id="@+id/buttonLog"
             android:text="log"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -103,7 +101,7 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/buttonASIN"
+            android:id="@+id/buttonASin"
             android:text="ASin"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -112,7 +110,7 @@ tools:context=".MainActivity">
             android:textSize="16sp"
             />
         <Button
-            android:id="@+id/buttonACOS"
+            android:id="@+id/buttonACos"
             android:text="ACos"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -122,7 +120,7 @@ tools:context=".MainActivity">
             />
 
         <Button
-            android:id="@+id/buttonATAN"
+            android:id="@+id/buttonATan"
             android:text="ATan"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -199,7 +197,7 @@ tools:context=".MainActivity">
             />
 
         <Button
-            android:id="@+id/buttonSQRT"
+            android:id="@+id/buttonSqrt"
             android:text="√"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -255,7 +253,7 @@ tools:context=".MainActivity">
             />
 
         <Button
-            android:id="@+id/buttonMOD"
+            android:id="@+id/buttonMod"
             android:text="%"
             android:layout_weight="1"
             android:layout_width="0dp"
