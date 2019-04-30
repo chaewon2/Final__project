@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:orientation="vertical"
@@ -50,8 +51,10 @@ tools:context=".MainActivity">
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
         <Button
             android:id="@+id/buttonCos"
@@ -59,8 +62,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -69,8 +74,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -79,8 +86,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -89,8 +98,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
     </LinearLayout>
 
@@ -106,8 +117,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
         <Button
             android:id="@+id/buttonACos"
@@ -115,8 +128,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -125,8 +140,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -135,8 +152,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -145,8 +164,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
     </LinearLayout>
 
@@ -162,8 +183,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -172,8 +195,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -182,8 +207,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -192,8 +219,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -202,8 +231,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
     </LinearLayout>
 
@@ -219,8 +250,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
         <Button
             android:id="@+id/button8"
@@ -228,8 +261,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -238,18 +273,22 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
-            android:id="@+id/buttonDIV"
+            android:id="@+id/buttonDiv"
             android:text="/"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -258,8 +297,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
     </LinearLayout>
 
@@ -275,8 +316,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
         <Button
             android:id="@+id/button5"
@@ -284,8 +327,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -294,28 +339,34 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
-            android:id="@+id/buttonMUL"
+            android:id="@+id/buttonMul"
             android:text="*"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
             android:id="@+id/buttonE"
-            android:text="e^"
+            android:text="e"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
     </LinearLayout>
 
@@ -331,8 +382,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
         <Button
             android:id="@+id/button2"
@@ -340,8 +393,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -350,8 +405,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -360,8 +417,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -370,8 +429,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
     </LinearLayout>
@@ -388,8 +449,10 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -398,18 +461,22 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
-            android:id="@+id/buttonDOT"
+            android:id="@+id/buttonPoint"
             android:text="."
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
+
             />
 
         <Button
@@ -418,17 +485,20 @@ tools:context=".MainActivity">
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:textSize="16sp"
+            android:textColor="#FFF"
             />
 
         <Button
             android:id="@+id/buttonRes"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="="
             android:textSize="16sp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#FFF"
             />
 
 </LinearLayout>

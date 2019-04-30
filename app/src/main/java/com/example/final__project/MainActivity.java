@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonP.setOnClickListener(this);
         buttonM = (Button)findViewById(R.id.buttonM);
         buttonM.setOnClickListener(this);
-        buttonMul = (Button)findViewById(R.id.buttonMUL);
+        buttonMul = (Button)findViewById(R.id.buttonMul);
         buttonMul.setOnClickListener(this);
-        buttonDiv = (Button)findViewById(R.id.buttonDIV);
+        buttonDiv = (Button)findViewById(R.id.buttonDiv);
         buttonDiv.setOnClickListener(this);
         buttonInv = (Button)findViewById(R.id.buttonInv);
         buttonInv.setOnClickListener(this);
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonFac.setOnClickListener(this);
         buttonPI = (Button)findViewById(R.id.buttonPI);
         buttonPI.setOnClickListener(this);
-        buttonPoint = (Button)findViewById(R.id.buttonDOT);
+        buttonPoint = (Button)findViewById(R.id.buttonPoint);
         buttonPoint.setOnClickListener(this);
         buttonSqrt = (Button)findViewById(R.id.buttonSqrt);
         buttonSqrt.setOnClickListener(this);
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int id = view.getId();
         String[] array = null;
-        if (equations.length() > 20) {
+        if (equations.length() > 40) {
             button0.setEnabled(false);
             button1.setEnabled(false);
             button2.setEnabled(false);
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             buttonOpen.setEnabled(false);
             buttonClose.setEnabled(false);
             buttonMod.setEnabled(false);
-        } else if (equations.length() < 21) {
+        } else if (equations.length() < 41) {
             button0.setEnabled(true);
             button1.setEnabled(true);
             button2.setEnabled(true);
@@ -198,12 +198,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             buttonOpen.setEnabled(true);
             buttonClose.setEnabled(true);
             buttonMod.setEnabled(true);
-        } else if (check) {
+        }
+        if (check) {
             equationString = new StringBuilder();
             total = new StringBuilder();
             check = false;
             equations.setText(equationString);
-        }   else {
+        } else {
             if (id == R.id.button0) {
                 total.append("0");
                 equationString.append("0");
@@ -244,7 +245,131 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 total.append("9");
                 equationString.append("9");
                 equations.setText(equationString);
+            } else if (id == R.id.buttonPoint) {
+                total.append(".");
+                equationString.append(".");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonPI) {
+                total.append("π");
+                equationString.append("π");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonP) {
+                total.append("+");
+                equationString.append("+");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonM) {
+                total.append("-");
+                equationString.append("-");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonMul) {
+                total.append("*");
+                equationString.append("*");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonDiv) {
+                total.append("/");
+                equationString.append("/");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonPW) {
+                total.append("^");
+                equationString.append("^(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonSqrt) {
+                total.append("@");
+                equationString.append("√(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonLog) {
+                total.append("l");
+                equationString.append("log(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonLN) {
+                total.append("n");
+                equationString.append("ln(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonSin) {
+                total.append("s");
+                equationString.append("sin(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonCos) {
+                total.append("c");
+                equationString.append("cos(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonTan) {
+                total.append("t");
+                equationString.append("tan(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonASin) {
+                total.append("z");
+                equationString.append("asin(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonACos) {
+                total.append("x");
+                equationString.append("acos(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonATan) {
+                total.append("v");
+                equationString.append("atan(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonE) {
+                total.append("e");
+                equationString.append("e");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonOpen) {
+                total.append("(");
+                equationString.append("(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonClose) {
+                total.append(")");
+                equationString.append(")");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonSqrt) {
+                total.append("@");
+                equationString.append("√(");
+                equations.setText(equationString);
+            } else if (id == R.id.buttonRes) {
+                showResult(array);
+            } else if (id == R.id.buttonInv) {
+                if (equationString.length() == 0) {
+                    equationString = new StringBuilder();
+                }
+                equationString = new StringBuilder("1/(" + equationString + ")");
+                equations.setText(equationString);
+                if (!check) {
+                    showResult(array);
+                }
+                total = new StringBuilder( "1/" + resultString);
+                showResult(array);
+            } else if (id == R.id.buttonCl) {
+                total = new StringBuilder();
+                equationString = new StringBuilder();
+                resultString = new StringBuilder();
+                result.setText(resultString);
+                equations.setText(equationString);
+            } else if (id == R.id.buttonBack) {
+                total = new StringBuilder();
+                equationString = new StringBuilder();
+                resultString = new StringBuilder();
+                result.setText(resultString);
+                equations.setText(equationString);
+            } else if (id == R.id.buttonMod) {
+                equationString.append('%');
+                equations.setText(equationString.toString());
+                showResult(array);
             }
         }
+    }
+    public void showResult(String[] array) {
+        Calculator calculate = new Calculator();
+        if (Calculator.error) {
+            IllegalAccessError e = new IllegalAccessError();
+            throw(e);
+        } else if (total.length() > 0) {
+            array = calculate.receive(total.toString());
+            array = calculate.stackParen(array);
+            resultString = new StringBuilder(calculate.advanced(array));
+        }
+        result.setText(resultString);
+        equationString = new StringBuilder();
+        total = new StringBuilder();
+        check = true;
     }
 }
