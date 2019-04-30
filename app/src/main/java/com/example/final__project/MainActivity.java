@@ -123,17 +123,59 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }
 
-    int check = 0;
-    StringBuilder equations = new StringBuilder();
-    StringBuilder result = new StringBuilder();
+    boolean check;
+    StringBuilder equationString = new StringBuilder();
+    StringBuilder resultString = new StringBuilder();
+    StringBuilder total = new StringBuilder();
 
     @Override
     public void onClick(View view) {
         int id = view.getId();
         String[] array = null;
         if (equations.length() > 20) {
-
+            button0.setEnabled(false);
+            button1.setEnabled(false);
+            button2.setEnabled(false);
+            button3.setEnabled(false);
+            button4.setEnabled(false);
+            button6.setEnabled(false);
+            button7.setEnabled(false);
+            button8.setEnabled(false);
+            button9.setEnabled(false);
+            buttonSin.setEnabled(false);
+            buttonCos.setEnabled(false);
+            buttonTan.setEnabled(false);
+            buttonASin.setEnabled(false);
+            buttonACos.setEnabled(false);
+            buttonATan.setEnabled(false);
+            buttonP.setEnabled(false);
+            buttonM.setEnabled(false);
+            buttonMul.setEnabled(false);
+            buttonDiv.setEnabled(false);
+            buttonInv.setEnabled(false);
+            buttonLog.setEnabled(false);
+            buttonLN.setEnabled(false);
+            buttonE.setEnabled(false);
+            buttonPW.setEnabled(false);
+            buttonFac.setEnabled(false);
+            buttonPI.setEnabled(false);
+            buttonPoint.setEnabled(false);
+            buttonSqrt.setEnabled(false);
+            buttonRes.setEnabled(false);
+            buttonOpen.setEnabled(false);
+            buttonClose.setEnabled(false);
+            buttonMod.setEnabled(false);
         }
-
+        if (id == R.id.button0) {
+            if (check) {
+                equationString = new StringBuilder();
+                total = new StringBuilder();
+                check = false;
+            } else {
+                total.append("0");
+                equationString.append("0");
+            }
+            equations.setText(equationString);
+        }
     }
 }
